@@ -1,0 +1,58 @@
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Edu<span class="text-gradient">AI</span></h3>
+        <p class="footer-description">
+          Revolutionizing education through AI-powered personalized learning experiences that adapt to every student's unique needs.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">GitHub</a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li *ngFor="let link of footerLinks.product">
+              <a [routerLink]="link.path">{{ link.label }}</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li *ngFor="let link of footerLinks.company">
+              <a [routerLink]="link.path">{{ link.label }}</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li *ngFor="let link of footerLinks.resources">
+              <a [routerLink]="link.path">{{ link.label }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {{ currentYear }} EduAI. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+

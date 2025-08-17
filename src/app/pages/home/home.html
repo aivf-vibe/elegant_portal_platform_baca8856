@@ -1,0 +1,145 @@
+
+
+
+<div class="home">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text fade-in">
+          <h1 class="hero-title">
+            Transform Learning with 
+            <span class="text-gradient">AI-Powered</span> 
+            Education
+          </h1>
+          <p class="hero-description">
+            Experience the future of education with our revolutionary AI platform that adapts to every student's unique learning style, providing personalized paths to success.
+          </p>
+          <div class="hero-cta">
+            <button class="btn-primary">Start Free Trial</button>
+            <button class="btn-secondary">Watch Demo</button>
+          </div>
+        </div>
+        
+        <div class="hero-visual slide-in-right">
+          <div class="hero-card">
+            <div class="card-header">
+              <div class="card-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="ai-response">
+                <div class="typing-animation">
+                  <span>Hello! I'm your AI tutor. Let's start with algebra basics...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Powerful Features for Modern Learning</h2>
+        <p class="section-description">
+          Discover how our AI-powered platform revolutionizes education with cutting-edge technology
+        </p>
+      </div>
+      
+      <div class="features-grid">
+        <div *ngFor="let feature of features; let i = index" 
+             class="feature-card fade-in"
+             [style.animation-delay]="i * 0.1 + 's'">
+          <div class="feature-icon">{{ feature.icon }}</div>
+          <h3 class="feature-title">{{ feature.title }}</h3>
+          <p class="feature-description">{{ feature.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-number">500K+</div>
+          <div class="stat-label">Active Students</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Improvement Rate</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Subjects Covered</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">AI Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">What Our Users Say</h2>
+        <p class="section-description">
+          Hear from educators, students, and parents who've experienced the EduAI difference
+        </p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div *ngFor="let testimonial of testimonials; let i = index"
+             class="testimonial-card fade-in"
+             [style.animation-delay]="i * 0.2 + 's'">
+          <div class="testimonial-content">
+            <p>"{{ testimonial.content }}"</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">{{ testimonial.avatar }}</div>
+            <div class="author-info">
+              <h4>{{ testimonial.name }}</h4>
+              <p>{{ testimonial.role }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <h2 class="cta-title">Ready to Transform Your Learning Experience?</h2>
+        <p class="cta-description">
+          Join thousands of students, educators, and institutions already using EduAI to achieve better learning outcomes.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn-primary">Start Your Free Trial</button>
+          <button class="btn-secondary">Schedule a Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
